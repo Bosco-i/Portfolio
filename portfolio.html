@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<title>My Portfolio</title>
+<style type="text/css">
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+list-style:none;
+text-decoration:none;
+font-family:'ubuntu',sans-serif;
+
+}
+#navbar {
+position:fixed;
+background:;
+width:100%;
+top:0;
+padding:20px 20px;
+transition:background 0.4s ease-in-out;
+}
+
+
+
+
+#navbar .logo a {
+color:#fff;
+font-size:30px;
+font-weight:800;
+}
+#navbar .logo a span {
+color:crimson;
+}
+#navbar .menu li{
+display:inline-block;
+
+}
+#navbar .menu li a{
+font-weight:400;
+font-size:15px;
+color:#fff;
+margin-left:5px;
+transition:color 0.3s ease;
+
+}
+#navbar.sticky {
+  padding: 10px;
+  background:crimson;
+}
+
+
+#navbar.sticky .logo a span{
+color:#fff;
+}
+
+#navbar .menu li a:hover{
+color:crimson;
+background:none;
+padding:6px;
+}
+
+
+#navbar .max-width {
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+}
+
+input[type=checkbox] {
+ display: none;
+ } 
+ 
+ /* HAMBURGER MENU */
+ .hamburger {
+ display:none;
+ font-size: 24px;
+ user-select: none;
+ color:white;
+ }
+ 
+ .home{
+ background-image:url(port/bp4.png);
+ color:#fff;
+ height:100vh;
+ min-height:300px;
+ background-repeat:no-repeat;
+ width:100%;
+ background-position:;
+ display:flex;
+ 
+ }
+ .home .max-width {
+ margin:100px 0 auto 60px;
+ 
+ }
+ .home .home-content .text-1 {
+ font-size:13px;
+ 
+ }
+ .home .home-content .text-2 {
+ font-size:25px;
+ font-weight:600;
+ margin-left:-3px;
+ }
+ 
+ .home .home-content .text-3 {
+ font-size:17px;
+ margin:5px 0;
+ }
+ 
+ .home .home-content span {
+
+ color:crimson;
+ font-size:20px;
+ font-weight:800;
+ }
+
+.home .home-content a{
+background:crimson;
+padding:8px 12px;
+color:#fff;
+border-radius:5px;
+font-size:17px;
+display:inline-block;
+margin-top:15px;
+border:2px solid crimson;
+transition:all 0.3s ease;
+}
+
+.home .home-content a:hover {
+background:black;
+color:crimson;
+}
+
+.about .about-content .left img{
+width:200px;
+height:200px;
+object-fit:cover;
+border-radius:6px;
+}
+ .about .title {
+ position:relative;
+ text-align:center;
+ margin-top:20px;
+padding-bottom:; 
+font-size:25px;
+font-weight:800;
+ 
+ }
+.about .line ,.team .line,
+.service .line,.skill .line,
+ .contact .line
+ {
+background:crimson;
+width:100px;
+height:3px;
+border-radius:5px;
+margin-left:40%;
+display:flex;
+margin-bottom:25px;
+}
+ 
+.about .about-content {
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:space-between;
+
+} 
+
+.about .about-content .left{
+width:45%;
+margin-left:25px;
+}
+.about .about-content .right{
+
+width:50%;
+}
+.about .max-width {
+margin:auto 0 auto 20px;
+}
+ .about .about-content .text {
+ font-size:15px;
+ margin-top:10px;
+ }
+ .about .about-content span {
+ color:crimson;
+ font-weight:800;
+ font-size:20px;
+ 
+ }
+ .about .about-content .text h5{
+margin:5px; 
+ 
+ }
+ 
+ .about .about-content .text p{
+ font-size:12px;
+ 
+ }
+ .about .about-content a
+ {
+ background:crimson;
+ padding:6px 8px;
+ color:#fff;
+ border-radius:5px;
+ font-size:15px;
+ display:inline-block;
+ margin-top:15px;
+ border:2px solid crimson;
+ transition:all 0.3s ease;
+ }
+ .about .about-content  a:hover {
+ background:white;
+ color:crimson;
+ }
+ .service  .max-width {
+ margin:;
+ 
+ 
+ }
+
+ .service,.team {
+ background:#111;
+ margin-top:30px;
+ padding:50px 0;
+ color:#fff;
+ }
+ 
+ .service .serv-content  {
+ display:flex;
+flex-wrap:
+ justify-content:space-between;
+ align-items:center;
+
+ } 
+ .service .serv-content .card {
+ width:calc(33%-20px);
+background:#222; 
+text-align:center; 
+padding:15px 10px;
+cursor:pointer;
+border-radius:6px;
+margin:10px;
+color:#fff;
+ }
+ .service .serv-content .card i{
+ font-size:30px;
+ color:crimson;
+ margin-bottom:5px;
+ }
+ 
+ .service .serv-content .box {
+ font-size:13px;
+ 
+ }
+ .service .serv-content .card .text 
+ {
+ font-size:17px;
+ }
+ 
+ 
+ .service .title {
+ position:relative;
+ text-align:center;
+ color:white;
+ margin:2px;
+ font-size:25px;
+ font-weight:800;
+ 
+ }
+ 
+ .service .serv-content :hover {
+ padding:6px;
+color:crimson;
+
+ }
+ 
+ .service .serv-content  .card :hover i{
+ color:#fff;
+ 
+ }
+ .skill .title {
+ position:relative;
+ text-align:center;
+ margin-top:20px;
+ padding-bottom:; 
+ font-size:25px;
+ font-weight:800;
+ 
+ }
+ .skill .skill-content {
+ display:flex;
+ justify-content:space-between;
+ 
+ }
+ 
+ .skill .max-width  {
+ width:90%;
+ margin:auto;
+ }
+.skill .skill-content .left{
+width:40%;
+}
+
+ .skill .skill-content .left p{
+ font-size:13px;
+ margin-bottom:6px;
+ text-align:center;
+ }
+ 
+
+ .skill-content .right {
+ margin-bottom:30px;
+ width:55%;
+ }
+ .skill .skill-content .right span {
+ font-weight:800;
+ margin-bottom:5px;
+ }
+ 
+ .skill-content .right .html{
+ width:90%;
+ background:red;
+ height:2px;
+ margin-bottom:8px;
+ }
+ 
+ .skill-content .right .css{
+ width:70%;
+ background:crimson;
+ height:2px;
+  margin-bottom:8px;
+ }
+ .skill-content .right .js{
+ width:50%;
+ background:crimson;
+ height:2px;
+  margin-bottom:8px;
+ }
+ .skill-content .right .php{
+ width:60%;
+ background:crimson;
+ height:2px;
+ 
+ }
+ 
+ 
+ .skill .skill-content .text {
+ font-size:17px;
+ font-weight:800;
+ margin-bottom:5px;
+ text-align:center;
+ }
+ 
+ .skill .skill-content .right .info {
+ display:flex;
+ justify-content:space-between;
+ 
+ }
+ 
+ .skill .skill-content .right a{
+ background:crimson;
+ padding:6px 8px;
+ color:#fff;
+ border-radius:5px;
+ font-size:17px;
+ display:inline-block;
+ margin-top:20px;
+ border:2px solid crimson;
+ transition:all 0.3s ease;
+ 
+ 
+ }
+ 
+ .skill .skill-content .right a:hover{
+ background:none;
+ color:crimson;
+ }
+ .team .max-width {
+ width:95%;
+ margin:auto;
+ }
+ 
+ .team  .card img{
+ width:100%;
+ height:150px;
+object-fit:cover;
+border-radius:50%;
+border:3px solid crimson;
+ 
+ }
+ .team .team-content  .card{
+ background:#222;
+ border-radius:6px;
+ padding:15px 15px;
+ text-align:center;
+ width:170px;
+ }
+ 
+ .team .team-content   .card .box {
+ display:flex;
+ justify-content:center;
+ flex-direction:column;
+ align-items:center;
+ }
+ 
+ .team .team-content {
+ display:flex;
+ justify-content:space-between;
+ }
+ 
+ .team .team-content .card .box .text {
+ font-size:17px;
+ font-weight:800;
+ margin:10px 0;
+ }
+ 
+ .team .team-content .card .box p {
+ font-size:13px;
+ }
+ 
+ .team .title{
+ position:relative;
+ text-align:center; 
+ font-size:25px;
+ font-weight:800;
+ }
+ .team .team-content .card  :hover {
+ background:crimson;
+ padding:10px;
+ }
+ 
+ .contact .max-width {
+ width:90%;
+ margin:auto;
+ 
+ }
+ 
+ .contact .contact-content {
+ 
+display:flex;
+flex-wrap:wrap;
+ justify-content:space-between;
+
+
+ }
+ 
+
+.contact .contact-content .column{
+width:50%;
+
+}
+.contact .contact-content .text{
+font-size:17px;
+font-weight:800;
+margin-bottom:5px;
+
+}
+.contact .contact-content .left p {
+font-size:12px;
+
+}
+.contact .contact-content .left .icon{
+margin:10px 0;
+
+}
+.contact .contact-content .row{
+display:flex;
+height:55px;
+align-content:center;
+}
+
+.contact .contact-content .info{
+margin-left:10px;
+}
+.contact .contact-content .row i{
+font-size:20px;
+color:crimson;
+}
+
+.contact .title {
+position:relative;
+text-align:center;
+margin-top:20px;
+font-size:25px;
+font-weight:800;
+
+}
+.contact .contact-content .row .info .head{
+font-weight:600;
+
+}
+
+.contact .contact-content .row .info .sub-title{
+color:#333;
+}
+
+.contact .right form .fields-width{
+display:flex;
+
+}
+
+.contact .right form .fields .field
+{
+width:100%;
+height:35px;
+margin-top:10px;
+
+}
+
+.contact .right form .fields input
+{
+width:100%;
+height:100%;
+padding:0 15px;
+border:1px solid lightgrey;
+border-radius:6px;
+outline:none;
+
+}
+
+
+
+
+.contact .right form .textarea textarea{
+width:100%;
+height:100%;
+padding: 10px;
+border:1px solid lightgrey;
+border-radius:6px;
+outline:none;
+resize:none;
+}
+
+.contact .right form .name{
+margin-right:10px;
+
+}
+
+.contact .right form .fields .textarea{
+width:100%;
+height:100%;
+
+
+}
+
+.contact .right form .button{
+width:130px;
+height:35px;
+margin-top:10px;
+margin-bottom:50px;
+}
+.contact .right form .button button {
+width:100%;
+height:100%;
+background:crimson;
+border:1px solid crimson;
+color:#fff;
+outline:none;
+font-size:17px;
+border-radius:6px;
+}
+
+.contact  .contact-content .button button:hover{
+ background:none;
+ color:crimson;
+ }
+
+.footer {
+background:#111;
+padding:20px 12px;
+color:#fff;
+font-size:17px;
+text-align:center;
+}
+.footer span a{
+color:crimson;
+}
+.footer span a:hover{
+text-decoration:underline;
+
+}
+
+
+ 
+ @media (max-width: 400px) {
+ #navbar{
+ padding:10px 20px;
+ }
+ #navbar .menu{
+ display:none;
+ position: absolute;
+ top:50px;
+ background:#111;
+ right: 0;
+ left: 100px;
+ width:50%;
+ text-align: center;
+ padding: 16px 0;
+ }
+ #navbar .menu li{
+ display:block;
+ margin-top:10px;
+ }
+ input[type=checkbox]:checked ~ .menu {
+ display: block;
+ }
+ 
+ .hamburger {
+ display: block;
+ }
+ 
+ .home{
+ height:200px;
+ width:100%;
+  background-image:url(port/bp1.png);
+ background-position:top;
+ min-height:200px;
+ 
+ }
+ .home .max-width {
+ margin:70px 0 auto 20px;
+ 
+ }
+ .home .home-content .text-1 {
+ font-size:12px;
+ 
+ }
+ .home .home-content .text-2 {
+ font-size:20px;
+ font-weight:600;
+ margin-left:-3px;
+ }
+ 
+ .home .home-content .text-3 {
+ font-size:14px;
+ margin:5px 0;
+ }
+ .home .home-content a{
+ 
+ margin-top:8px;
+ padding:4px 10px;
+ font-size:15px;
+ }
+ .about .about-content {
+ display:flex;
+flex-direction:column;
+ align-items:center;
+ } 
+ .about .about-content .left{
+ width:90%;
+ margin:auto;
+ text-align:center;
+ }
+ .about .about-content .right{
+ text-align:center;
+ width:90%;
+ }
+ .about .line,.service .line,.skill .line,
+ .team .line{
+ width:80px;
+ 
+ }
+ .service .serv-content {
+ flex-direction:column;
+ width:70%;
+ margin:auto;
+ }
+ .skill .skill-content .left{
+ width:90%;
+ margin:auto;
+ text-align:center;
+ }
+ 
+ .skill .skill-content{
+ flex-direction:column;
+ 
+ }
+ 
+ 
+ .team .team-content{
+flex-direction:column; 
+ width:100%;
+ margin:auto;
+ }
+ 
+ .team .team-content  .card{
+ background:#222;
+ border-radius:6px;
+ margin:20px;
+ text-align:center;
+width:250px;
+height:350px;
+ }
+ .team  .card img{
+ width:90%;
+ height:200px;
+ object-fit:cover;
+ border-radius:50%;
+ border:3px solid crimson;
+ 
+ }
+ 
+ .team .max-width {
+ width:90%;
+ margin:auto;
+ }
+ 
+ .contact .contact-content{
+ flex-direction:column;
+ align-items:center;
+ }
+ 
+ .contact .contact-content .column{
+ width:80%;
+ 
+ }
+ .contact .contact-content .text{
+ text-align:center;
+ 
+ }
+ 
+ .skill-content .right {
+ margin-bottom:30px;
+ width:90%;
+ margin:auto;
+ }
+ 
+ .footer{
+ font-size:13px;
+ 
+ }
+ 
+
+ }
+
+</style>
+</head>
+<body>
+<nav id="navbar"  >
+<div class="max-width">
+<div class="logo">
+<a href="" >Portfo<span>lio.</span></a></div>
+<ul class="nav-links">
+
+   <!-- USING CHECKBOX HACK -->
+   <input type="checkbox" id="checkbox_toggle" />
+   <label for="checkbox_toggle" class="hamburger"><i class="fa fa-bars"></i> </label>
+
+   <!-- NAVIGATION MENUS -->
+   <div class="menu">
+
+<li><a href="#home" >Home</a></li>
+<li><a href="#about" >About</a></li>
+<li><a href="#service" >Services</a></li>
+<li><a href="#skill" >Skills</a></li>
+<li><a href="#team" >Team</a></li>
+<li><a href="#contact" >Contact</a></li>
+</div></ul></nav>
+
+<section class="home" id="home" >
+<div class="max-width">
+<div class="home-content" >
+<div class="text-1" >Hello, my name is</div>
+<div class="text-2" >Emmanuel Dan </div>
+<div class="text-3" >And I'm a <span class="typing" ></span> </div>
+<a href="" >Hire me</a>
+
+
+</div></div></div></section>
+
+<section class="about" id="about" >
+
+<h2 class="title" >About me</h2>
+<div class="line" ></div>
+<div class="about-content" >
+
+<div class="column left">
+<img src="port/mep.png"></div>
+<div class="column right">
+<div class="text">I'm Emmanuel and I'm a <span class="typing-1" ></span>
+<h5>Early Passion for Technology</h5>
+          <p>From an early age, I became fascinated with computers and programming. Starting with basic HTML and CSS, I gradually expanded my skills to include JavaScript and various frameworks.</p>
+<a href="" >Download CV</a>
+
+</div></div></div></div></section>
+
+<section class="service" id="service" >
+<div class="max-width" >
+<h2 class="title" >My services</h2>
+<div class="line" ></div>
+<div class="serv-content" >
+<div class="card">
+<div class="box" >
+<i class="fa fa-paint-brush" ></i>
+<div class="text" >Web design</div>
+<p>lorem itself will be pursued by deception, and it will be followed by the distribution of what things are, and what they are for him.</p>
+</div></div>
+<div class="card">
+<div class="box" >
+<i class="fa fa-line-chart" ></i>
+<div class="text" >Advertising </div>
+<p>lorem itself will be pursued by deception, and it will be followed by the distribution of what things are, and what they are for him.</p>
+</div></div>
+<div class="card">
+<div class="box" >
+<i class="fa fa-code" ></i>
+<div class="text" >Web dev</div>
+<p>lorem itself will be pursued by deception, and it will be followed by the distribution of what things are, and what they are for him.</p>
+</div></div>
+</div></div></div></section>
+
+<section class="skill" id="skill" >
+<div class="max-width" >
+<h2 class="title" >My Skills</h2>
+<div class="line" ></div>
+<div class="skill-content">
+<div class="column left">
+<div class="text">My creative Skills and Experinces.</div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  Quidem eius odit necessitat</p></div>
+<div class="column right">
+<div class="bars" >
+<div class="info" >
+<span>Html</span>
+<span>90%</span>
+</div>
+<div class="lines html" ></div>
+</div>
+
+<div class="bars" >
+<div class="info" >
+<span>Css</span>
+<span>70%</span>
+</div>
+<div class="lines css" ></div>
+
+</div>
+
+<div class="bars" >
+<div class="info" >
+<span>Javascript</span>
+<span>50%</span>
+</div>
+<div class="lines js" ></div>
+</div>
+
+<div class="bars" >
+<div class="info" >
+<span>Php</span>
+<span>40%</span>
+</div>
+<div class="lines php" ></div>
+</div>
+<a href="" >See more</a>
+</div></div></div></div></section>
+
+
+<section class="team" id="team">
+<div class="max-width" >
+<h2 class="title" >My teams</h2>
+<div class="line" ></div>
+<div class="team-content">
+<div class="card">
+<div class="box" >
+<img src="port/tp.png" >
+<div class="text">Someone name</div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  Quidem eius odit necessitat</p>
+</div></div>
+
+<div class="card">
+<div class="box" >
+<img src="port/bp3.png" >
+<div class="text">Someone name</div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  Quidem eius odit necessitat</p>
+</div></div>
+
+<div class="card">
+<div class="box" >
+<img src="port/tp1.png" >
+<div class="text">Someone name</div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  Quidem eius odit necessitat</p>
+</div></div>
+</div></div></div></section>
+
+<section class="contact" id="contact" >
+<div class="max-width" >
+<h2 class="title" >Contact me</h2>
+<div class="line" ></div>
+<div class="contact-content" >
+
+<div class="column left">
+<div class="text" >Get in touch</div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  Quidem eius odit necessitat</p>
+<div class="icon">
+<div class="row">
+<i class="fa fa-users" ></i>
+<div class="info">
+<div class="head" >Name:</div>
+<div class="sub-tittle" >Emmanuel Dan</div>
+</div></div>
+
+<div class="row">
+<i class="fa fa-map-marker" ></i>
+<div class="info">
+<div class="head" >Address:</div>
+<div class="sub-tittle" >No2 suleja</div>
+</div></div>
+
+<div class="row">
+<i class="fa fa-envelope" ></i>
+<div class="info">
+<div class="head" >Email:</div>
+<div class="sub-tittle" >emmanueld2@gmail.com</div>
+</div></div>
+</div></div>
+
+<div class="column right">
+<div class="text"> Message me</div>
+<form action="#">
+
+<div class="fields">
+<div class="fields-width">
+<div class="field name">
+<input type="text" placeholder="name">
+</div>
+<div class="field email">
+<input type="email" placeholder="Email">
+</div></div>
+<div class="field subject">
+<input type="text" placeholder="Subject">
+</div>
+ 
+ <div class="field textarea" >
+ <textarea  placeholder="Describe" ></textarea>
+ </div>
+<div class="button">
+<button type="submit">Send message</button>
+</div></div></form></div></div></div></section>
+
+<div class="footer" >
+<span>Created by <a href="#" >Elite tech</a>
+<span class="fa fa-copyright"></span> 2023 All rights reserved.</span>
+</div>
+
+<script type="text/javascript">
+window.addEventListener('scroll', function(event) {
+ const navigationBar = document.getElementById('navbar');
+ 
+ if (window.scrollY > 200) {
+ navigationBar.classList.add('sticky');
+ } else {
+ navigationBar.classList.remove('sticky');
+ }
+});
+// text animation
+
+var typed = new Typed(".typing" ,{
+strings : [ "Youtuber", "Blogger", "Developer", "Designer", "Freelencer"],
+typeSpeed:100,
+backSpeed:60,
+loop:true
+
+});
+
+var typed = new Typed(".typing-1" ,{
+strings : [ "Youtuber", "Blogger", "Developer", "Designer", "Freelencer"],
+typeSpeed:100,
+backSpeed:60,
+loop:true
+
+});
+
+</script>
+
+
+</body></html>
